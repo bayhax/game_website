@@ -1,6 +1,7 @@
 import mimetypes
 import os
 import re
+import time
 from wsgiref.util import FileWrapper
 
 from django.http import StreamingHttpResponse
@@ -60,3 +61,11 @@ def stream_video(request):
         resp['Content-Length'] = str(size)
     resp['Accept-Ranges'] = 'bytes'
     return resp
+
+
+def supervisor(request):
+    return render(request, 'supervisor.html')
+
+
+def dispute(request):
+    return render(request, 'dispute.html')
