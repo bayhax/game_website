@@ -1,4 +1,4 @@
-//var video = document.querySelector('#display_video');
+//var video = document.querySelector('video');
 //var mediaSource = new MediaSource();
 //video.src = URL.createObjectURL(mediaSource);
 //mediaSource.addEventListener('sourceopen', sourceOpen);

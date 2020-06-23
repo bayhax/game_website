@@ -6,5 +6,5 @@ from apps.home import views
 
 urlpatterns = [
     path('index', views.IndexView.as_view()),  # 首页
-
+    path('show_video', views.stream_video),
 ]
