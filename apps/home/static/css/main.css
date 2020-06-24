@@ -92,10 +92,10 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     height: 4rem;
     color: #F2F2F2;
     line-height: 5rem;
+    outline: none;
 }
 .title_link ul li a:hover {
     border-bottom: 2px solid #e27a3f;
-
 }
 .active {
     border-bottom: 2px solid #e27a3f;
@@ -572,7 +572,9 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     height: 50%;
     line-height:5rem;
 }
-
+.page_down {
+    position:absolute;bottom:0;left:50%;
+}
 /* 登录 */
 .form_input {
     position: absolute;

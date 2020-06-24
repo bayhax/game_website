@@ -49,6 +49,15 @@ var mySwiper = new Swiper('.swiper-container', {
     //  clickable: true,
 
     //},
+    on: {
+        slideChangeTransitionStart: function(){
+            if(this.realIndex == 0){
+                $(".page_down").css("display","block")
+            }else{
+                $(".page_down").css("display","none")
+            }
+        }
+    }
 });
 // 导航条切换swiper页面
 $('#index').click(function(){
@@ -86,9 +95,11 @@ function recognize_url_hash(){
         $("#index").addClass("active")
         $(".bg_img").css({"background":"url(../../static/img/bg_1.png","background-size":"cover"})
         $("#ugc,#contact,#download").removeClass("active")
+
     }else{
         $("#contact").addClass("active")
         $(".bg_img").css({"background":"url(../../static/img/bg_1.png","background-size":"cover"})
         $("#ugc,#index,#download").removeClass("active")
+
     }
 }
