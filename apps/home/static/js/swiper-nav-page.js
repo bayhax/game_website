@@ -38,6 +38,7 @@ $('#contact').click(function(){
 })
 
 function download(){
+    mySwiper.mousewheel.disable();
     if(mySwiper.realIndex == 0){
         document.getElementById("download_overflow").style.display="block";
     }else{
@@ -45,6 +46,7 @@ function download(){
     }
 };
 function download_close(){
+    mySwiper.mousewheel.enable();
     if(mySwiper.realIndex == 0){
         document.getElementById("download_overflow").style.display="none";
     }else{

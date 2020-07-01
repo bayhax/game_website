@@ -50,18 +50,19 @@
                     <div class="swiper-slide" data-hash="index">
                         <div id="game_video" class="game_video">
                             <div id="video_content" class="video_content">
-                            <video id="display_video" style="height:100%;width:100%;object-fit:fill" loop poster="{% static 'img/video_cover.jpg' %}">
+                            <video id="display_video" class="display_video" loop poster="{% static 'img/video_cover.jpg' %}">
                                 <source src="show_video" type="video/mp4">
                                 您的浏览器不支持video标签</video></div>
                             <div id="index_page_logo" class="index_page_logo"><img src="{% static 'img/logo.png' %}" alt="logo"></div>
                             <div id="download_right_now" class="download_right_now" onclick="download()">立即下载</div>
                             <div id="download_overflow" class="download_overflow">
-                                <div id="download_close" class="download_close" onclick="download_close()">关闭</div>
+                                <div id="download_close" class="download_close" onclick="download_close()"></div>
                                 <div class="download_way">
+                                    <span style="font-size:1.8rem;color:#F2F2F2;">请选择游戏平台下载安装</span>
                                     <ul>
-                                        <li>请选择下载方式</li>
-                                        <li><a href="#"> 端游下载</a></li>
-                                        <li><a href="#"> 安卓下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">安卓下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">IOS下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">PC下载</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -78,13 +79,14 @@
                             <img src="{% static 'img/qq.png'%}" alt="qq">
                             <img src="{% static 'img/qq.png'%}" alt="qq">
                         </div>
-                        <div id="download_overflow_2" class="download_overflow" style="left:0;">
-                                <div id="download_close_2" class="download_close" onclick="download_close()">关闭</div>
+                        <div id="download_overflow_2" class="download_overflow" style="left:34.5rem;">
+                                <div id="download_close_2" class="download_close" onclick="download_close()"></div>
                                 <div class="download_way">
+                                    <span style="font-size:1.8rem;color:#F2F2F2;">请选择游戏平台下载安装</span>
                                     <ul>
-                                        <li>请选择下载方式</li>
-                                        <li><a href="#"> 端游下载</a></li>
-                                        <li><a href="#"> 安卓下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">安卓下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">IOS下载</a></li>
+                                        <li><a href="#" onclick="alert('暂未推出，敬请期待！')">PC下载</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -113,8 +115,9 @@
                 </footer>
             </div>
         </div>
+        <div class="page_down"><img src="{% static 'img/PageDown.png'%}"></div>
     </div>
-    <div class="page_down"><img src="{% static 'img/PageDown.png'%}"></div>
+
     <div id="bg_img" class="bg_img active_img"></div>
     <!-- Swiper JS -->
     <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
@@ -123,6 +126,5 @@
     <script type="text/javascript" src="{% static 'js/swiper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/swiper-nav-page.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/public.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/mod.js' %}"></script>
 </body>
 </html>
