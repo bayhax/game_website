@@ -29,11 +29,11 @@
 
     <!--网页顶部导航块-->
     <div class="head_nav">
-            <div class="logo"><img src="{% static 'img/logo.png' %}" alt="logo" height="100%"></div>
+            <div class="logo"><img src="{{ logo }}" alt="logo" height="100%"></div>
             <div class="title_link">
                 <ul>
-                    <li class="li"><a href="/home/index#index" class="active" id="index">首页</a></li>
-                    <li class="li"><a href="/home/index#contact" id="contact">联系我们</a></li>
+                    <li class="li"><a href="/#index" class="active" id="index">首页</a></li>
+                    <li class="li"><a href="/#contact" id="contact">联系我们</a></li>
                     <li class="li"><a href="#" id="ugc">UGC中心</a></li>
                     <li class="li filling" onclick="download()"><a href="#" id="download">下载</a></li>
                 </ul>
@@ -50,10 +50,10 @@
                     <div class="swiper-slide" data-hash="index">
                         <div id="game_video" class="game_video">
                             <div id="video_content" class="video_content">
-                            <video id="display_video" class="display_video" loop poster="{% static 'img/video_cover.jpg' %}">
+                            <video id="display_video" class="display_video" loop poster="{{ video_cover }}">
                                 <source src="show_video" type="video/mp4">
                                 您的浏览器不支持video标签</video></div>
-                            <div id="index_page_logo" class="index_page_logo"><img src="{% static 'img/logo.png' %}" alt="logo"></div>
+                            <div id="index_page_logo" class="index_page_logo"><img src="{{ logo }}" alt="logo"></div>
                             <div id="download_right_now" class="download_right_now" onclick="download()">立即下载</div>
                             <div id="download_overflow" class="download_overflow">
                                 <div id="download_close" class="download_close" onclick="download_close()"></div>
@@ -72,12 +72,12 @@
                     </div>
                     <div class="swiper-slide" data-hash="contact">
                         <div class="contact_box">
-                            <img src="{% static 'img/ugc.png'%}" alt="ugc">
-                            <img src="{% static 'img/taptap.png'%}" alt="taptap">
-                            <img src="{% static 'img/4399.png'%}" alt="4399"><br>
-                            <img src="{% static 'img/qq.png'%}" alt="qq">
-                            <img src="{% static 'img/qq.png'%}" alt="qq">
-                            <img src="{% static 'img/qq.png'%}" alt="qq">
+                            <img src="{{ ugc }}" alt="ugc">
+                            <img src="{{ taptap }}" alt="taptap">
+                            <img src="{{ 4399_company }}" alt="4399"><br>
+                            <img src="{{ qq }}" alt="qq">
+                            <img src="{{ qq }}" alt="qq">
+                            <img src="{{ qq }}" alt="qq">
                         </div>
                         <div id="download_overflow_2" class="download_overflow" style="left:34.5rem;">
                                 <div id="download_close_2" class="download_close" onclick="download_close()"></div>
@@ -101,13 +101,13 @@
                     <div class="box">
                         <div class="content">
                             <p>
-                                <a href="/home/supervisor" target="_blank">家长监护工程</a><span>|</span>
-                                <a href="/home/dispute" target="_blank">纠纷处理</a>
+                                <a href="/supervisor" target="_blank">家长监护工程</a><span>|</span>
+                                <a href="/dispute" target="_blank">纠纷处理</a>
                             </p>
                             <p><span>健康游戏忠告：抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗，适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活</span></p>
                             <p><span>北京第零世界科技有限公司 地址：北京市朝阳区建国路15号院甲1号北岸1292三间房创意生活园区9-7291 电话：010-60607973</span></p>
-                            <p><span>网络文化经营许可证：<a href="{% static 'img/licence.jpg' %}" target="_blank">
-                                京网文[2019]3669-352</a>京ICP证：<a href="{% static 'img/credit.jpg' %}">京B2-20191828</a></span></p>
+                            <p><span>网络文化经营许可证：<a href="{{ licence }}" target="_blank">
+                                京网文[2019]3669-352</a>京ICP证：<a href="{{ credit }}">京B2-20191828</a></span></p>
                             <p><span>京ICP备 19009550号 ©2019 北京第零世界科技有限公司 版权所有</span></p>
 
                         </div>
@@ -115,7 +115,7 @@
                 </footer>
             </div>
         </div>
-        <div class="page_down"><img src="{% static 'img/PageDown.png'%}"></div>
+        <div class="page_down"><img src="{{ PageDown }}"></div>
     </div>
 
     <div id="bg_img" class="bg_img active_img"></div>

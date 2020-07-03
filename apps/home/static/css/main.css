@@ -1,4 +1,11 @@
-
+:root {
+   --bg_1: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/bg_1.png");
+   --title_head: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/title_head.png");
+   --pause: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/pause.png");
+   --download_bg: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/download_bg.png");
+   --download_close: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/download_close.png");
+   --download_game: url("https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/download_game.png");
+}
 body{font-family:'Microsoft Yahei';font-size:14px;color:#666;
 }
 html,body{height:100%;min-width: 1000px;min-height: 1000px;}
@@ -10,7 +17,7 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     height:100%;
     width:100%;
     opacity:0;
-    background:no-repeat url(../img/bg_1.png);
+    background:no-repeat var(--bg_1);
     background-size: cover;
     -webkit-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
@@ -21,7 +28,7 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
 }
 .head_nav {
     height: 8%;
-    background:  no-repeat 100% url(../img/title_head.png);
+    background:  no-repeat 100% var(--title_head);
 }
 .body_con{position:relative;overflow:hidden;z-index:0;min-width:800px;max-width:2560px;height:92%;margin:0 auto}
 
@@ -136,14 +143,14 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     height: 3rem;
     bottom: 6rem;
     position: absolute;
-    background: no-repeat url(../img/pause.png);
+    background: no-repeat var(--pause);
     transition: all 1s ease-in-out;
 }
 .download_overflow {
     position: absolute;
     top: 21rem;
     left: 35rem;
-    background: url(../img/download_bg.png);
+    background: var(--download_bg);
     display: none;
     z-index: 99;
     height: 24rem;
@@ -151,9 +158,9 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     margin: 0 5% 5% 5%;
 }
 .download_close {
-    width: 2.5rem;
-    height: 2.5rem;
-    background: url(../img/download_close.png);
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--download_close);
     cursor: pointer;
     font-size: 1.5rem;
     right: 2rem;
@@ -184,7 +191,7 @@ html,body{height:100%;min-width: 1000px;min-height: 1000px;}
     bottom: 10rem;
     color: #272727;
     position: absolute;
-    background: url(../img/download_game.png);
+    background: var(--download_game);
 }
 .download_way {
     width:50%;

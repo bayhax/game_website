@@ -14,15 +14,17 @@ function format(shijianchuo)
         $('body').addClass('gray');
     }
 };
+play = "https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/play.png";
+pause = "https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/pause.png";
 format(timestamp2);
 var game_video = document.getElementById('display_video');
 function playPause(){
     if(game_video.paused){
-        $(".play_pause").css("background", "no-repeat url(../static/img/play.png)");
+        $(".play_pause").css("background", "no-repeat url(" + play + ")");
         game_video.play();
     }
     else{
-        $(".play_pause").css("background", "no-repeat url(../static/img/pause.png)");
+        $(".play_pause").css("background", "no-repeat url(" + pause + ")");
         game_video.pause();
     }
 };

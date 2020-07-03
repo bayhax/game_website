@@ -27,7 +27,7 @@ SECRET_KEY = '%tu0zsllxi1&x#$^n1ro_-(fp7d753s$ca0nl)b*hev7v5hamu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['123.207.163.171', '172.16.32.15', '127.0.0.1', 'zbw.zerogame.com.cn', 'www.zbw.zerogame.com.cn']
 
 
 # Application definition
@@ -66,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'game_website.contexts.imgurl',  # 全局模板变量'
             ],
         },
     },

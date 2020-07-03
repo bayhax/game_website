@@ -1,3 +1,4 @@
+bg_1 = "https://game-website-1253454674.cos.ap-beijing.myqcloud.com/img/bg_1.png";
 // ugc页面
 var ugcSwiper = new Swiper('.swiper-ugc', {
     direction: 'horizontal',
@@ -62,12 +63,12 @@ window.onhashchange=function(event){
 function recognize_url_hash(){
     if(window.location.hash=="#index" || window.location.hash==""){
         $("#index").addClass("active")
-        $(".bg_img").css({"background":"url(../../static/img/bg_1.png","background-size":"cover"})
+        $(".bg_img").css({"background":"url(" + bg_1 + ")","background-size":"cover"})
         $("#ugc,#contact,#download").removeClass("active")
 
     }else{
         $("#contact").addClass("active")
-        $(".bg_img").css({"background":"url(../../static/img/bg_1.png","background-size":"cover"})
+        $(".bg_img").css({"background":"url(" + bg_1 + ")","background-size":"cover"})
         $("#ugc,#index,#download").removeClass("active")
 
     }
